@@ -12,21 +12,25 @@ To check your created documents for Sphinx, and to be pushed on to the nutanixwo
 Installation
 ++++++++++++
 
-.. note:: This document assumes the pre-requisite package Python has been installed. If not, use: https://docs.python-guide.org/starting/installation/
+.. note:: This document assumes the pre-requisite package Python has been installed
 
 1. Open a commandline
 
-2. Uses the pip install command to install the need sphinx and depended tools
+2. Install Homebrew using:
 
-Run the following commands (https://www.sphinx-doc.org/en/master/usage/installation.html#installation-from-pypi):
+   ``/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
 
-* pip install sphinx
+3. After the installation has been successful, run the command ``brew install sphinx-doc`` to get the the basics for sphinx
 
-* pip install sphinxcontrib-fulltoc
+4. run the following commands and provide the logged in user's password
 
-* pip install sphinx-bootstrap-theme
+* sudo pip3 install sphinx
 
-* pip install sphinx_fontawesome
+* sudo pip3 install sphinxcontrib-fulltoc
+
+* sudo pip3 install sphinx-bootstrap-theme
+
+* sudo pip3 install sphinx_fontawesome
 
 
-After this installation, you can use the command sphinx-build to generate the HTML version of the created pages. To understand what Sphinx does, have a look here: https://youtu.be/oJsUvBQyHBs. As you have already "copied" the template, you do not have to run the ``sphinx-quickstart`` command. You can go directly to run ``sphinx-build`` with parameters.
+After this installation, you can use the command sphinx-build to generate the HTML version of the created pages.
